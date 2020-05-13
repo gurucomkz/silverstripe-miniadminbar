@@ -1,0 +1,7 @@
+---
+Name: miniadminbar
+---
+
+Page:
+  extensions:
+    - Gurucomkz\MiniAdminBar\PageExtension
