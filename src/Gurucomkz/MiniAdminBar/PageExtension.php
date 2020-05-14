@@ -4,6 +4,7 @@ namespace Gurucomkz\MiniAdminBar;
 
 use Page;
 use SilverStripe\Control\Controller;
+use SilverStripe\Core\Manifest\ModuleResourceLoader;
 use SilverStripe\ORM\DataExtension;
 
 /**
@@ -12,6 +13,15 @@ use SilverStripe\ORM\DataExtension;
  * @property-read Page $owner
  */
 class PageExtension extends DataExtension{
+
+    public function getLogoFontDir()
+    {
+        $file = 'silverstripe/admin:client/dist/fonts/silverstripe.eot';
+        $loader = ModuleResourceLoader::singleton();
+        $res = $loader->resolveResource($file);
+        $url = $res->getURL();
+        return dirname($url);
+    }
 
     public function getAdminEditLink()
     {
