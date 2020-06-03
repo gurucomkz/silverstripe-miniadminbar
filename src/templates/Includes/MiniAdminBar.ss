@@ -14,8 +14,9 @@
     border-radius: 30px;
     text-align: center;
     opacity: 0.6;
-    font-size: 2rem;
+    font-size: 2em;
     line-height: 1px;
+    text-decoration: none;
 }
 @font-face{font-family:silverstripe;src:url($LogoFontDir/silverstripe.eot);src:url($LogoFontDir/silverstripe.eot?#iefix) format("embedded-opentype"),url($LogoFontDir/silverstripe.woff) format("woff"),url($LogoFontDir/silverstripe.ttf) format("truetype"),url($LogoFontDir/silverstripe.svg#silverstripe) format("svg");font-weight:400;font-style:normal}
 #miniadminbar-link:before {
